@@ -19,7 +19,8 @@ public class Methodes {
 	 */
 	public static void main(String[] args) {
 		
-		int[] tab = {4, 5, 7, 20};
+		int[] tab = {14, 12, 8, 18};
+		double[] tab2 = {11, 15.4, 18.4};
 		
 		afficher();
 		afficher(tab);
@@ -30,7 +31,14 @@ public class Methodes {
 		int res2 = somme(tab);
 		System.out.println("res2 = " + res2);
 		
-			
+		double res3 = somme(20.5, 7);
+		System.out.println("res3 : " + res3);
+		
+		double moyenne = moyenneTab(tab2);
+		System.out.println("moyenne = " + moyenne);
+		
+		int valMin = minTableauBoucleDoWhile(tab);
+		System.out.println(valMin);
 		
 	}
 	
@@ -81,9 +89,52 @@ public class Methodes {
 	}
 	
 	//Méthode qui retourne un double et  prend en paramètre deux doubles (decimal)
-	//Methode qui retourne la somme des éléments  d'un tableau de double. La somme retournée est un double.
-	//Méthode qui renvoie la moyenne des éléments d'un tableau (double)
-	//Methode qui renvoie l'élément le plus petit d'un tableau 
+	public static double somme(double val1, double val2) {
+		return val1 + val2;
+	}
 	
-
+	//Methode qui retourne la somme des éléments  d'un tableau de double. La somme retournée est un double.
+	public static double somme(double[] tab) {
+		double somme = 0;
+		for (double item : tab) {
+			somme += item;
+		}
+		return somme;
+	}
+	
+	
+	//Méthode qui renvoie la moyenne des éléments d'un tableau (double)
+	public static double moyenneTab(double[] tab) {
+		double sum = somme(tab);
+		return sum/tab.length;
+	}
+	
+	
+	//Methode qui renvoie l'élément le plus petit d'un tableau (int)
+	/*
+	 * [14, 12, 8, 18]
+	 * 
+	 */
+	public static int minTableauBoucleDoWhile(int[] tab) {
+		int i = 1;
+		int min = tab[0];
+		do {
+			if(min > tab[i]) {
+				min = tab[i];
+			}
+			i++;
+		}while(i < tab.length);
+		
+		return min;
+	}
+	
+	public static int minBoucleFor(int[] tab) {
+		int min = tab[0];
+		for (int i = 1; i < tab.length; i++) {
+			if(min > tab[i]) {
+				min = tab[i];
+			}
+		}
+		return min;
+	}
 }
