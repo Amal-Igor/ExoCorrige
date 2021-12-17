@@ -1,4 +1,4 @@
-package fr.dawan.heritage.redefinition_de_methodes;
+package fr.dawan.heritage.covariance_de_variable;
 
 public class Triangle extends Forme{
 	
@@ -9,7 +9,5 @@ public class Triangle extends Forme{
 	public double aire() {
 		return base * hauteur * 0.5;
 	}
-	
-	
 	
 }
