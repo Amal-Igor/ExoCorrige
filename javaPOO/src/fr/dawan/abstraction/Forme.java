@@ -23,6 +23,6 @@ public abstract class Forme {
 		return "hello";
 	}
 	
-	//Si on a une methode abstraite, elle doit obligatoirement être dans une abstraite
+	//Si on a une methode abstraite, elle doit obligatoirement être dans une classe abstraite
 	
 }

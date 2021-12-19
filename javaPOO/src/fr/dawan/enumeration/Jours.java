@@ -6,6 +6,7 @@ package fr.dawan.enumeration;
  * Comme les jours de la semaine par exemple 
  * Permet d'enrichir les types que nous avons déjà à disposition
  */
+
 public enum Jours {
 	LUNDI,
 	MARDI,

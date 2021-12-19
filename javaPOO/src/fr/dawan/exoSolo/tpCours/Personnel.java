@@ -1,9 +1,12 @@
-package fr.dawan.tp_concept_objet;
+package fr.dawan.exoSolo.tpCours;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
+
 public class Personnel implements IPersonnel{
+
 
 	List<Employe> lstEmploye;
 	
@@ -12,19 +15,24 @@ public class Personnel implements IPersonnel{
 	public Personnel() {
 		lstEmploye = new ArrayList<Employe>();
 	}
+		
 
 	@Override
 	public void ajouterEmploye(Employe employe) {
 		lstEmploye.add(employe);
 	}
 
+
+
 	@Override
 	public void calculerSalaire() {
 		for (Employe employe : lstEmploye) {
 			System.out.println(employe.getNom() + " gagne " + employe.calculerSalaire() + " euros");
+
 		}
-		
 	}
+
+
 
 	@Override
 	public double salaireMoyen() {
@@ -34,5 +42,25 @@ public class Personnel implements IPersonnel{
 		}
 		return somme/lstEmploye.size();
 	}
+	
+	@Override
+	public void getItem(){
+		for(Employe employe : lstEmploye) {
+			System.out.println();
+		}
+	};
 
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+	
 }

@@ -3,6 +3,7 @@ package fr.dawan.exceptions;
 /*
  * 	Une exception est une erreur qui provoque l'arrête de l'application
  */
+
 public class Personne {
 
 	private String nom;

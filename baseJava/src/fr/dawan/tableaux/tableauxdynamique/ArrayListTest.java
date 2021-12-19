@@ -9,14 +9,10 @@ public class ArrayListTest {
 		/*
 		 * L'objectif des tableaux dynamique, dites collections, est de pouvoir créer des tableaux qu'on pourra facilement
 		 * modifier, la taille peut augmenter. 
-		 * 
 		 * Nous allons utiliser la classe ArrayList pour créer nos tableaux dynamique : 
-		 * 	C'est un objet qui n'a pas de taille limite commes les tableaux fixe. 
-		 * 
+		 * C'est un objet qui n'a pas de taille limite commes les tableaux fixe. 
 		 * La classe ArrayList est utilisée pour les types evolués, complexe non pour les types primitifs
-		 * 
 		 * On peut lui affecter entre chevron le type de données qu'il va stocker
-		 *
 		 */
 		
 		//Tableau de chaine de caractère
