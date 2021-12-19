@@ -9,9 +9,7 @@ public class Chaises extends Mobilier{
 	}
 
 	
-	public String getInfos() {
-		return nomMeuble + " " + nomDesigner + " " + prix + " " + stock;
-	};
+
 	
 
 }

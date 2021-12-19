@@ -6,7 +6,7 @@ public class Mobilier {
 	public String nomDesigner;
 	public int prix;
 	public int stock;
-	
+
 	public Mobilier () {
 		stock++;
 	};
@@ -18,6 +18,24 @@ public class Mobilier {
 		this.prix = prix;
 		this.stock = stock;
 	}
+	
+	
+	
+	
+	  public String getNomMeuble() { return nomMeuble; }
+	  
+	  public void setNomMeuble(String nomMeuble) { this.nomMeuble = nomMeuble; }
+	  
+	  public String getNomDesigner() { return nomDesigner; }
+	  
+	  public void setNomDesigner(String nomDesigner) { this.nomDesigner =
+	  nomDesigner; }
+	  
+	  public int getPrix() { return prix; }
+	  
+	  public void setPrix(int prix) { this.prix = prix; }
+	 
+
 	
 	
 

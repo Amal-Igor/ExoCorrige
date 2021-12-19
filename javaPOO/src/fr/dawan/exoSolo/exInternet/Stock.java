@@ -1,5 +1,6 @@
 package fr.dawan.exoSolo.exInternet;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Stock implements IStock{
@@ -40,8 +41,10 @@ public class Stock implements IStock{
 	}
 
 	@Override
-	public String getMobilier() {
-		return stock.toString();
+	public void getMobilier() {
+		for(Mobilier mobilier : stock ) {
+			System.out.println(" Nom : " + mobilier.getNomMeuble() + " | " + "Designer par : "+ mobilier.getNomDesigner() + " | Prix :" + mobilier.getPrix() + " €");
+		};
 	}
 	
 }
